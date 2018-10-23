@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="colorPrimary">#cb3528</color>
+    <color name="colorPrimaryDark">#ce2415</color>
+    <color name="colorAccent">#3366ff</color>
+    <color name="white">#FAFAFA</color>
+    <color name="superwhite">#FFFFFF</color>
+    <color name="gray">#AAAAAA</color>
+    <color name="black">#0A0A0A</color>
+    <color name="tab_unselected">#dd7971</color>
+    <color name="blue">#536DFE</color>
+    <color name="green">#4CAF50</color>
+    <color name="colorDivider">#26000000</color>
+</resources>

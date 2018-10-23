@@ -1,0 +1,184 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical"
+        android:padding="16dp">
+
+        <LinearLayout
+            android:id="@+id/ll_passenger"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="4dp"
+                android:text="Select passenger from this list"
+                android:textStyle="bold" />
+
+            <android.support.v7.widget.RecyclerView
+                android:id="@+id/rv_passenger"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="4dp"
+                android:background="@color/white" />
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="8dp"
+                android:text="or input passenger data"
+                android:textStyle="bold" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:id="@+id/ll_input_suffix"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="4dp"
+                android:text="Suffix" />
+
+            <android.support.v7.widget.AppCompatSpinner
+                android:id="@+id/sp_bookflight_suffix"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="8dp"
+                android:hint="Enter Suffix"
+                android:inputType="textCapSentences"
+                android:singleLine="true" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="4dp"
+                android:text="First Name" />
+
+            <EditText
+                android:id="@+id/et_bookflight_name"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="8dp"
+                android:hint="Enter your first name"
+                android:inputType="textCapSentences"
+                android:singleLine="true"
+                android:textColorHint="@android:color/holo_red_light" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="4dp"
+                android:text="Last Name" />
+
+            <EditText
+                android:id="@+id/et_bookflight_last_name"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="8dp"
+                android:hint="Enter your last name"
+                android:inputType="textCapSentences"
+                android:singleLine="true"
+                android:textColorHint="@android:color/holo_red_light" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:id="@+id/ll_input_identity"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="4dp"
+                android:text="Identity Number" />
+
+            <EditText
+                android:id="@+id/et_bookflight_identity"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="8dp"
+                android:hint="Enter your identity number"
+                android:inputType="number"
+                android:singleLine="true"
+                android:textColorHint="@android:color/holo_red_light" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:id="@+id/ll_input_email"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="4dp"
+                android:text="Email" />
+
+            <EditText
+                android:id="@+id/et_bookflight_email"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="8dp"
+                android:hint="Enter your email"
+                android:inputType="textEmailAddress"
+                android:singleLine="true"
+                android:textColorHint="@android:color/holo_red_light" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:id="@+id/ll_input_phone"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="4dp"
+                android:text="Phone Number" />
+
+            <EditText
+                android:id="@+id/et_bookflight_phone"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="8dp"
+                android:hint="Enter your phone number"
+                android:inputType="number"
+                android:singleLine="true"
+                android:textColorHint="@android:color/holo_red_light" />
+        </LinearLayout>
+
+        <Button
+            android:id="@+id/btn_bookflight_book"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@color/colorPrimary"
+            android:enabled="true"
+            android:text="Input Passenger"
+            android:textColor="@color/white" />
+    </LinearLayout>
+</ScrollView>

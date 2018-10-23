@@ -1,0 +1,55 @@
+{
+  "project_info": {
+    "project_number": "112167229728",
+    "firebase_url": "https://ticketapp-pasarprodukbumn.firebaseio.com",
+    "project_id": "ticketapp-pasarprodukbumn",
+    "storage_bucket": "ticketapp-pasarprodukbumn.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:112167229728:android:2b4d448c0b3deecc",
+        "android_client_info": {
+          "package_name": "com.roka.ticketing"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "112167229728-m68smcl87mo1mnnh36k6u1nr8cg5m399.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "com.roka.ticketing",
+            "certificate_hash": "29b700f19ef8f47c13b24afd497f64d743ed67cf"
+          }
+        },
+        {
+          "client_id": "112167229728-tfut471culkf2o62t3p5k307ckd971lv.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyD5EUrEtBqIksrlD50ogOTiuts_JhmJLvU"
+        }
+      ],
+      "services": {
+        "analytics_service": {
+          "status": 1
+        },
+        "appinvite_service": {
+          "status": 2,
+          "other_platform_oauth_client": [
+            {
+              "client_id": "112167229728-tfut471culkf2o62t3p5k307ckd971lv.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        },
+        "ads_service": {
+          "status": 2
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

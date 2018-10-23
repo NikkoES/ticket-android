@@ -1,0 +1,231 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:background="@color/white"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:paddingTop="16dp"
+    android:paddingLeft="24dp"
+    android:paddingRight="24dp"
+    android:paddingBottom="16dp"
+    android:orientation="vertical">
+    <!-- Adult -->
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="56dp"
+        android:id="@+id/rl_ticket_plane_origin">
+        <com.mikepenz.iconics.view.IconicsImageView
+            android:id="@+id/iiv_plane_origin_icon"
+            android:layout_width="24dp"
+            android:layout_height="24dp"
+            app:iiv_icon="gmd-group"
+            app:iiv_color="@color/colorPrimary"
+            app:iiv_size="24dp"
+            android:layout_centerVertical="true"
+            android:background="?attr/selectableItemBackground"
+            android:layout_alignParentLeft="true"/>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:id="@+id/ll_plane_origin"
+            android:layout_marginLeft="16dp"
+            android:layout_marginRight="16dp"
+            android:layout_toLeftOf="@id/iiv_swap"
+            android:layout_toRightOf="@id/iiv_plane_origin_icon"
+            android:orientation="vertical">
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Adult"
+                android:textColor="@color/colorPrimary"
+                android:textSize="14sp"
+                android:textStyle="bold"/>
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="8dp">
+                <com.mikepenz.iconics.view.IconicsImageView
+                    android:id="@+id/iiv_remove_adult"
+                    android:layout_width="24dp"
+                    android:layout_height="24dp"
+                    app:iiv_icon="gmd-remove-circle-outline"
+                    android:layout_alignParentLeft="true"
+                    android:layout_centerVertical="true"/>
+
+                <TextView
+                    android:id="@+id/tv_adult"
+                    android:layout_width="50dp"
+                    android:layout_height="wrap_content"
+                    android:textAlignment="center"
+                    android:layout_marginLeft="16dp"
+                    android:layout_marginRight="16dp"
+                    android:textSize="24sp"
+                    android:layout_centerVertical="true"
+                    android:backgroundTint="@color/colorPrimary"
+                    android:textColorHint="@color/black"
+                    android:layout_toRightOf="@id/iiv_remove_adult"
+                    android:text="1" />
+
+                <com.mikepenz.iconics.view.IconicsImageView
+                    android:id="@+id/iiv_add_adult"
+                    android:layout_width="24dp"
+                    android:layout_centerVertical="true"
+                    android:layout_height="24dp"
+                    android:layout_toRightOf="@id/tv_adult"
+                    app:iiv_icon="gmd-add-circle-outline"/>
+            </RelativeLayout>
+
+        </LinearLayout>
+    </RelativeLayout>
+
+    <!-- Child -->
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="56dp"
+        android:id="@+id/rl_child_passenger"
+        android:layout_marginTop="16dp">
+        <com.mikepenz.iconics.view.IconicsImageView
+            android:id="@+id/iiv_plane_destination_icon"
+            android:layout_width="24dp"
+            android:layout_height="24dp"
+            app:iiv_icon="gmd-child-care"
+            app:iiv_color="@color/colorPrimary"
+            app:iiv_size="24dp"
+            android:layout_centerVertical="true"
+            android:background="?attr/selectableItemBackground"
+            android:layout_alignParentLeft="true"/>
+
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:id="@+id/ll_plane_destination"
+            android:layout_marginLeft="16dp"
+            android:layout_toRightOf="@id/iiv_plane_destination_icon"
+            android:orientation="vertical">
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Child"
+                android:textColor="@color/colorPrimary"
+                android:textSize="14sp"
+                android:textStyle="bold"/>
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="8dp">
+                <com.mikepenz.iconics.view.IconicsImageView
+                    android:id="@+id/iiv_remove_child"
+                    android:layout_width="24dp"
+                    android:layout_height="24dp"
+                    app:iiv_icon="gmd-remove-circle-outline"
+                    android:layout_alignParentLeft="true"
+                    android:layout_centerVertical="true"/>
+
+                <TextView
+                    android:id="@+id/tv_child"
+                    android:layout_width="50dp"
+                    android:layout_height="wrap_content"
+                    android:textAlignment="center"
+                    android:layout_marginLeft="16dp"
+                    android:layout_marginRight="16dp"
+                    android:textSize="24sp"
+                    android:layout_centerVertical="true"
+                    android:backgroundTint="@color/colorPrimary"
+                    android:textColorHint="@color/black"
+                    android:layout_toRightOf="@id/iiv_remove_child"
+                    android:text="0" />
+
+                <com.mikepenz.iconics.view.IconicsImageView
+                    android:id="@+id/iiv_add_child"
+                    android:layout_width="24dp"
+                    android:layout_centerVertical="true"
+                    android:layout_height="24dp"
+                    android:layout_toRightOf="@id/tv_child"
+                    app:iiv_icon="gmd-add-circle-outline"/>
+            </RelativeLayout>
+        </LinearLayout>
+    </RelativeLayout>
+
+    <!-- Infant-->
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="56dp"
+        android:id="@+id/rl_ticket_plane_origin_date"
+        android:layout_marginTop="16dp">
+        <com.mikepenz.iconics.view.IconicsImageView
+            android:id="@+id/iiv_plane_origin_date_icon"
+            android:layout_width="24dp"
+            android:layout_height="24dp"
+            app:iiv_icon="gmd-child-friendly"
+            app:iiv_color="@color/colorPrimary"
+            app:iiv_size="24dp"
+            android:layout_centerVertical="true"
+            android:background="?attr/selectableItemBackground"
+            android:layout_alignParentLeft="true"/>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:id="@+id/ll_plane_origin_date"
+            android:layout_marginLeft="16dp"
+            android:layout_toRightOf="@id/iiv_plane_origin_date_icon"
+            android:orientation="vertical">
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Infant"
+                android:textColor="@color/colorPrimary"
+                android:textSize="14sp"
+                android:textStyle="bold"/>
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="8dp">
+                <com.mikepenz.iconics.view.IconicsImageView
+                    android:id="@+id/iiv_remove_infant"
+                    android:layout_width="24dp"
+                    android:layout_height="24dp"
+                    app:iiv_icon="gmd-remove-circle-outline"
+                    android:layout_alignParentLeft="true"
+                    android:layout_centerVertical="true"/>
+
+                <TextView
+                    android:id="@+id/tv_infant"
+                    android:layout_width="50dp"
+                    android:layout_height="wrap_content"
+                    android:textAlignment="center"
+                    android:layout_marginLeft="16dp"
+                    android:layout_marginRight="16dp"
+                    android:textSize="24sp"
+                    android:layout_centerVertical="true"
+                    android:backgroundTint="@color/colorPrimary"
+                    android:textColorHint="@color/black"
+                    android:layout_toRightOf="@id/iiv_remove_infant"
+                    android:text="0" />
+
+                <com.mikepenz.iconics.view.IconicsImageView
+                    android:id="@+id/iiv_add_infant"
+                    android:layout_width="24dp"
+                    android:layout_centerVertical="true"
+                    android:layout_height="24dp"
+                    android:layout_toRightOf="@id/tv_infant"
+                    app:iiv_icon="gmd-add-circle-outline"/>
+            </RelativeLayout>
+        </LinearLayout>
+    </RelativeLayout>
+
+    <Button
+        android:id="@+id/btn_passenger_confirm"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Confirm"
+        android:layout_marginTop="16dp"
+        android:foreground="?attr/selectableItemBackground"
+        android:background="@color/colorPrimary"
+        android:textColor="@color/white"/>
+</LinearLayout>

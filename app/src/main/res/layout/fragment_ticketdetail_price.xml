@@ -1,0 +1,173 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:background="@color/white"
+    android:orientation="vertical">
+    <android.support.v7.widget.CardView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="8dp"
+        android:layout_marginRight="8dp"
+        android:layout_marginTop="8dp"
+        android:layout_marginBottom="2dp"
+        android:background="@color/white"
+        android:foreground="?attr/selectableItemBackground"
+        app:cardCornerRadius="8dp">
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@color/superwhite"
+            android:orientation="vertical">
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal">
+                <ImageView
+                    android:id="@+id/iv_ticketdetail_thumb"
+                    android:layout_alignParentLeft="true"
+                    android:layout_width="96dp"
+                    android:layout_height="56dp"
+                    android:src="@drawable/sj"/>
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="vertical"
+                    android:layout_toRightOf="@id/iv_ticketdetail_thumb"
+                    android:layout_toLeftOf="@id/ll_ticketdetail_status"
+                    android:padding="8dp">
+                    <TextView
+                        android:id="@+id/tv_ticket_detail_brand_name"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:textStyle="normal"
+                        android:text="Citilink"
+                        android:textColor="@color/black"
+                        android:textSize="14sp"/>
+                    <TextView
+                        android:id="@+id/tv_ticket_detail_class"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:textStyle="normal"
+                        android:textColor="@color/black"
+                        android:text="QG 858 - Economy"
+                        android:textSize="14sp"/>
+                </LinearLayout>
+
+                <LinearLayout
+                    android:id="@+id/ll_ticketdetail_status"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:orientation="vertical"
+                    android:layout_centerVertical="true"
+                    android:layout_alignParentRight="true"
+                    android:padding="8dp">
+                    <TextView
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:textStyle="normal"
+                        android:text="Refundable"
+                        android:textColor="@color/green"
+                        android:textSize="14sp"/>
+                </LinearLayout>
+            </RelativeLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                android:weightSum="3"
+                android:paddingLeft="16dp"
+                android:paddingRight="16dp"
+                android:paddingBottom="4dp"
+                android:paddingTop="4dp">
+                <TextView
+                    android:id="@+id/tv_num_of_ticket"
+                    android:layout_width="80dp"
+                    android:layout_height="wrap_content"
+                    android:textStyle="normal"
+                    android:text="Adult (1x)"
+                    android:textColor="@color/black"
+                    android:textSize="14sp"/>
+                <TextView
+                    android:id="@+id/tv_ticket_detail_item_price"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="8dp"
+                    android:textStyle="normal"
+                    android:textColor="@color/colorPrimary"
+                    android:text="Rp. 1,034,000"
+                    android:textSize="14sp"/>
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="8dp"
+                    android:textStyle="normal"
+                    android:textColor="@color/black"
+                    android:text="/ person"
+                    android:textSize="14sp"/>
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                android:weightSum="3"
+                android:paddingLeft="16dp"
+                android:paddingRight="16dp"
+                android:paddingBottom="4dp"
+                android:paddingTop="4dp">
+                <TextView
+                    android:layout_width="80dp"
+                    android:layout_height="wrap_content"
+                    android:textStyle="normal"
+                    android:text="Total Price"
+                    android:textColor="@color/black"
+                    android:textSize="14sp"/>
+                <TextView
+                    android:id="@+id/tv_ticket_detail_total_price"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="8dp"
+                    android:textStyle="normal"
+                    android:textColor="@color/colorPrimary"
+                    android:text="Rp. 1,034,000"
+                    android:textSize="14sp"/>
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                android:weightSum="3"
+                android:paddingLeft="16dp"
+                android:paddingRight="16dp"
+                android:paddingBottom="4dp"
+                android:paddingTop="4dp"
+                android:layout_marginBottom="8dp">
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:textStyle="normal"
+                    android:text="Lorem ipsum dolor sit amet, consectetur adipiscing elit."
+                    android:textColor="@color/black"
+                    android:textSize="10sp"/>
+            </LinearLayout>
+
+        </LinearLayout>
+    </android.support.v7.widget.CardView>
+
+    <Button
+        android:id="@+id/btn_ticketdetail_book_flight"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginRight="8dp"
+        android:layout_marginLeft="8dp"
+        android:layout_marginTop="8dp"
+        android:text="Book Flight"
+        android:textColor="@color/white"
+        android:background="@color/green"/>
+</LinearLayout>

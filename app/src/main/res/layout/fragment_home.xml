@@ -1,0 +1,38 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:orientation="vertical">
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical">
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="200dp"
+            android:layout_marginBottom="16dp">
+
+            <android.support.v4.view.ViewPager
+                android:id="@+id/vp_home_promo"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"/>
+
+            <me.relex.circleindicator.CircleIndicator
+                android:id="@+id/ci_indicator"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_alignParentBottom="true"
+                android:paddingBottom="8dp" />
+        </RelativeLayout>
+
+        <android.support.v7.widget.RecyclerView
+            android:id="@+id/rv_payment"
+            android:paddingLeft="8dp"
+            android:paddingRight="8dp"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"/>
+
+
+    </LinearLayout>
+</ScrollView>

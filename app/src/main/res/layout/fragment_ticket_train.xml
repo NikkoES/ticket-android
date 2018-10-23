@@ -1,0 +1,281 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:background="@color/white"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:paddingTop="16dp"
+    android:paddingLeft="24dp"
+    android:paddingRight="24dp"
+    android:paddingBottom="16dp"
+    android:orientation="vertical">
+    <!-- Ticket Plane Origin -->
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="56dp"
+        android:id="@+id/rl_ticket_plane_origin">
+        <com.mikepenz.iconics.view.IconicsImageView
+            android:id="@+id/iiv_plane_origin_icon"
+            android:layout_width="24dp"
+            android:layout_height="24dp"
+            app:iiv_icon="gmd-train"
+            app:iiv_color="@color/colorPrimary"
+            app:iiv_size="24dp"
+            android:layout_centerVertical="true"
+            android:background="?attr/selectableItemBackground"
+            android:layout_alignParentLeft="true"/>
+
+
+        <com.mikepenz.iconics.view.IconicsImageView
+            android:id="@+id/iiv_swap"
+            android:layout_width="24dp"
+            android:layout_height="24dp"
+            app:iiv_icon="gmd-swap-vert"
+            app:iiv_color="@color/colorPrimary"
+            android:layout_centerVertical="true"
+            app:iiv_size="24dp"
+            android:background="?attr/selectableItemBackground"
+            android:layout_alignParentRight="true"/>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:id="@+id/ll_plane_origin"
+            android:layout_marginLeft="16dp"
+            android:layout_marginRight="16dp"
+            android:layout_toLeftOf="@id/iiv_swap"
+            android:layout_toRightOf="@id/iiv_plane_origin_icon"
+            android:orientation="vertical">
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Origin"
+                android:textColor="@color/colorPrimary"
+                android:textSize="14sp"
+                android:textStyle="bold"/>
+
+            <android.support.v7.widget.AppCompatSpinner
+                android:id="@+id/sp_train_select_origin"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:paddingTop="8dp"
+                android:backgroundTint="@color/colorPrimary"
+                android:popupBackground="@color/white"
+                android:textColor="@color/black"/>
+        </LinearLayout>
+    </RelativeLayout>
+
+    <!-- Ticket Plane Destination -->
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="56dp"
+        android:id="@+id/rl_ticket_plane_destination"
+        android:layout_marginTop="16dp">
+        <com.mikepenz.iconics.view.IconicsImageView
+            android:id="@+id/iiv_plane_destination_icon"
+            android:layout_width="24dp"
+            android:layout_height="24dp"
+            app:iiv_icon="gmd-train"
+            app:iiv_color="@color/colorPrimary"
+            app:iiv_size="24dp"
+            android:layout_centerVertical="true"
+            android:background="?attr/selectableItemBackground"
+            android:layout_alignParentLeft="true"/>
+
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:id="@+id/ll_plane_destination"
+            android:layout_marginLeft="16dp"
+            android:layout_toRightOf="@id/iiv_plane_destination_icon"
+            android:orientation="vertical">
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Destination"
+                android:textColor="@color/colorPrimary"
+                android:textSize="14sp"
+                android:textStyle="bold"/>
+
+            <android.support.v7.widget.AppCompatSpinner
+                android:id="@+id/sp_train_select_destination"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:paddingTop="8dp"
+                android:backgroundTint="@color/colorPrimary"
+                android:popupBackground="@color/white"
+                android:textColor="@color/black" />
+        </LinearLayout>
+    </RelativeLayout>
+
+    <!-- Ticket Plane Origin Date-->
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="56dp"
+        android:id="@+id/rl_ticket_plane_origin_date"
+        android:layout_marginTop="16dp">
+        <com.mikepenz.iconics.view.IconicsImageView
+            android:id="@+id/iiv_plane_origin_date_icon"
+            android:layout_width="24dp"
+            android:layout_height="24dp"
+            app:iiv_icon="gmd-date-range"
+            app:iiv_color="@color/colorPrimary"
+            app:iiv_size="24dp"
+            android:layout_centerVertical="true"
+            android:background="?attr/selectableItemBackground"
+            android:layout_alignParentLeft="true"/>
+
+
+        <LinearLayout
+            android:id="@+id/ll_round_trip"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentRight="true"
+            android:layout_centerVertical="true"
+            android:orientation="vertical">
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Round Trip ?"
+                android:textColor="@color/colorPrimary"
+                android:textSize="10sp"
+                android:layout_marginBottom="8dp"/>
+            <android.support.v7.widget.SwitchCompat
+                android:id="@+id/sw_round_trip"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:trackTint="@color/gray"
+                android:thumbTint="@color/colorPrimary"
+                android:background="?attr/selectableItemBackground"
+                android:theme="@style/CustomSwitch"/>
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:id="@+id/ll_plane_origin_date"
+            android:layout_marginLeft="16dp"
+            android:layout_marginRight="16dp"
+            android:layout_toLeftOf="@id/ll_round_trip"
+            android:layout_toRightOf="@id/iiv_plane_origin_date_icon"
+            android:orientation="vertical">
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Departure Date"
+                android:textColor="@color/colorPrimary"
+                android:textSize="14sp"
+                android:textStyle="bold"/>
+
+            <TextView
+                android:id="@+id/tv_train_select_origin_date"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:paddingTop="8dp"
+                android:backgroundTint="@color/colorPrimary"
+                android:textColorHint="@color/black"
+                android:hint="Select Date" />
+        </LinearLayout>
+    </RelativeLayout>
+
+    <!-- Ticket Plane Destination Date-->
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="56dp"
+        android:id="@+id/rl_ticket_plane_return_date"
+        android:layout_marginTop="16dp"
+        android:visibility="gone">
+        <com.mikepenz.iconics.view.IconicsImageView
+            android:id="@+id/iiv_plane_return_date_icon"
+            android:layout_width="24dp"
+            android:layout_height="24dp"
+            app:iiv_icon="gmd-date-range"
+            app:iiv_color="@color/colorPrimary"
+            app:iiv_size="24dp"
+            android:layout_centerVertical="true"
+            android:background="?attr/selectableItemBackground"
+            android:layout_alignParentLeft="true"/>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:id="@+id/ll_plane_return_date"
+            android:layout_marginLeft="16dp"
+            android:layout_marginRight="16dp"
+            android:layout_toRightOf="@id/iiv_plane_return_date_icon"
+            android:orientation="vertical">
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Return Date"
+                android:textColor="@color/colorPrimary"
+                android:textSize="14sp"
+                android:textStyle="bold"/>
+
+            <TextView
+                android:id="@+id/tv_train_select_return_date"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:paddingTop="8dp"
+                android:backgroundTint="@color/colorPrimary"
+                android:textColorHint="@color/black"
+                android:hint="Select Date" />
+        </LinearLayout>
+    </RelativeLayout>
+
+    <!-- Ticket Plane Passenger -->
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="56dp"
+        android:id="@+id/rl_plane_passenger"
+        android:layout_marginTop="16dp">
+        <com.mikepenz.iconics.view.IconicsImageView
+            android:id="@+id/iiv_plane_passenger_icon"
+            android:layout_width="24dp"
+            android:layout_height="24dp"
+            app:iiv_icon="gmd-date-range"
+            app:iiv_color="@color/colorPrimary"
+            app:iiv_size="24dp"
+            android:layout_centerVertical="true"
+            android:background="?attr/selectableItemBackground"
+            android:layout_alignParentLeft="true"/>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:id="@+id/ll_plane_passenger"
+            android:layout_marginLeft="16dp"
+            android:layout_marginRight="16dp"
+            android:layout_toRightOf="@id/iiv_plane_passenger_icon"
+            android:orientation="vertical">
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Passenger"
+                android:textColor="@color/colorPrimary"
+                android:textSize="14sp"
+                android:textStyle="bold"/>
+
+            <TextView
+                android:id="@+id/tv_train_passenger"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:paddingTop="8dp"
+                android:backgroundTint="@color/colorPrimary"
+                android:textColorHint="@color/black"
+                android:hint="Select Passenger" />
+        </LinearLayout>
+    </RelativeLayout>
+
+    <Button
+        android:id="@+id/btn_train_search"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Search"
+        android:layout_marginTop="16dp"
+        android:foreground="?attr/selectableItemBackground"
+        android:background="@color/colorPrimary"
+        android:textColor="@color/white"/>
+</LinearLayout>

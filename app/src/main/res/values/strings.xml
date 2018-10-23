@@ -1,0 +1,113 @@
+<resources>
+    <string name="app_name">Ticketing</string>
+    <!-- Home Activity -->
+    <string name="title_home">Home</string>
+    <string name="title_favorite">Favorite</string>
+    <string name="title_transaction">Booking</string>
+    <string name="title_transaction_train">Book Train</string>
+    <string name="title_cart">Cart</string>
+    <string name="title_account">Account</string>
+
+    <!-- Ticket Activity -->
+    <string name="ticket_manifest_label">Ticket</string>
+
+    <string-array name="suffix">
+        <item name="">MR</item>
+        <item name="">MRS</item>
+        <item name="">MS</item>
+    </string-array>
+
+    <string-array name="suffix_train">
+        <item name="">Mr.</item>
+        <item name="">Mrs.</item>
+        <item name="">Ms.</item>
+    </string-array>
+
+    <string-array name="suffix_child">
+        <item name="">MSTR</item>
+        <item name="">MISS</item>
+    </string-array>
+
+    <string-array name="airport_name">
+        <item name="">Ambon, Pattimura (AMQ)</item>
+        <item name="">Balikpapan, Sultan Aji Muhammad Sulaiman (BPN)</item>
+        <item name="">Bandung, Husein Sastranegara (BDO)</item>
+        <item name="">Banjarmasin, Syamsudin Noor (BDJ)</item>
+        <item name="">Banyuwangi, Blimbingsari (BWX)</item>
+        <item name="">Batam, Hang Nadim (BTH)</item>
+        <item name="">Bengkulu, Fatmawati Soekarno (BKS)</item>
+        <item name="">Berau, Kalimarau (BEJ)</item>
+        <item name="">Biak, Frans Kaisiepo (BIK)</item>
+        <item name="">Bima, Sultan Muhammad Salahudin (BMU)</item>
+        <item name="">Changsha, Huanghua (CSX)</item>
+        <item name="">Colombo, Bandaranaike International Colombo Airport (CMB)</item>
+        <item name="">Dekai, Nop Goliat Dekai Airport (DEX)</item>
+        <item name="">Denpasar, Bali - Ngurah Rai International Airport (DPS)</item>
+        <item name="">Dili, Presidente Nicolau Lobato International Airport (DIL)</item>
+        <item name="">Ende, H. Hasan Aroeboesman (ENE)</item>
+        <item name="">Fakfak, Fakfak Torea Airport (FKQ)</item>
+        <item name="">Gorontalo, Jalaluddin (GTO)</item>
+        <item name="">Guangzhou, Guangzhou Int Airport (CAN)</item>
+        <item name="">Halim Perdana K, Halim Perdana Kusuma (HLP)</item>
+        <item name="">Hangzhou, Hangzhou Xiaoshan International Airport (HGH)</item>
+        <item name="">Jakarta, Soekarno Hatta International Airport (CGK)</item>
+        <item name="">Jambi, Sultan Thaha (DJB)</item>
+        <item name="">Jayapura, Sentani (DJJ)</item>
+        <item name="">Kaimana, Utarom Airport (KNG)</item>
+        <item name="">Kendari, Haluoleo (KDI)</item>
+        <item name="">Ketapang, Rahadi Oesman (KTG)</item>
+        <item name="">Kotabaru, Gusti Syamsir Alam (KBU)</item>
+        <item name="">Kuala Lumpur, Kuala Lumpur International Airport (KUL)</item>
+        <item name="">Kupang, El Tari (KOE)</item>
+        <item name="">Labuan Bajo, Komodo Island, Komodo Airport (LBJ)</item>
+        <item name="">Lampung, Tanjung Karang - Raden Inten II (TKG)</item>
+        <item name="">Larantuka, Gewayantana (LKA)</item>
+        <item name="">Lombok, Lombok (LOP)</item>
+        <item name="">Lubuklinggau, Silampari (LLG)</item>
+        <item name="">Luwuk, Syukuran Aminuddin Amir (LUW)</item>
+        <item name="">Malang, Abdul Rahman Saleh (MLG)</item>
+        <item name="">Mamuju, Tampa Padang (MJU)</item>
+        <item name="">Manado, Sam Ratulangi (MDC)</item>
+        <item name="">Manokwari, Rendani (MKW)</item>
+        <item name="">Maumere, Frans Seda (MOF)</item>
+        <item name="">Medan, Kualanamu (KNO)</item>
+        <item name="">Merauke, Mopah (MKQ)</item>
+        <item name="">Morowali, Umbele Morowali (MRW)</item>
+        <item name="">Muara Bungo, Muara Bungo Airport (MRB)</item>
+        <item name="">Nabire, Nabire Airport (NBX)</item>
+        <item name="">Natuna, Ranai (NTX)</item>
+        <item name="">Padang, Minangkabau (PDG)</item>
+        <item name="">Palembang, Sultan Mahmud Badaruddin II (PLM)</item>
+        <item name="">Palu, Mutiara (PLW)</item>
+        <item name="">Pangkal Pinang, Bangka - Depati Amir (PGK)</item>
+        <item name="">Pangkalan Bun, Iskandar (PKN)</item>
+        <item name="">Pekanbaru, Sultan Syarif Kasim II (PKU)</item>
+        <item name="">Penang, Penang International Airport (PEN)</item>
+        <item name="">Pontianak, Supadio (PNK)</item>
+        <item name="">Putussibau, Pangsuma (PSU)</item>
+        <item name="">Raja Ampat, Marinda Airport (RJM)</item>
+        <item name="">Sampit, Sampit Airport (SMQ)</item>
+        <item name="">Seletar, Seletar (XSP)</item>
+        <item name="">Semarang, Achmad Yani (SRG)</item>
+        <item name="">Silangit, Toba Lake - Silangit Airport (DTB)</item>
+        <item name="">Sintang, Susilo (SQG)</item>
+        <item name="">Solo, Adi Sumarmo (SOC)</item>
+        <item name="">Sorong, Dominique Edward Osok (SOQ)</item>
+        <item name="">Surabaya, Juanda (SUB)</item>
+        <item name="">Tambolaka, Waikabubak (TMC)</item>
+        <item name="">Tanjung Pandan, Belitung - H.A.S Hanandjoeddin (TJQ)</item>
+        <item name="">Tanjung Pinang, Bintan - Raja Haji Fisabilillah (TNJ)</item>
+        <item name="">Tarakan, Juwata (TRK)</item>
+        <item name="">Ternate, Sultan Babullah (TTE)</item>
+        <item name="">Timika, Moses Kilangin (TIM)</item>
+        <item name="">Tual, Langgur - Karel Sadsuitubun (LUV)</item>
+        <item name="">Ujung Pandang, Makassar - Sultan Hasanuddin (UPG)</item>
+        <item name="">Waingapu, Umbu Mehang Kunda (WGP)</item>
+        <item name="">Wamena, Wamena (WMX)</item>
+        <item name="">Wuhan, Wuhan International Airport (WUH)</item>
+        <item name="">Yogyakarta, Adi Sucipto (JOG)</item>
+    </string-array>
+
+    <!-- TODO: Remove or change this placeholder text -->
+    <string name="hello_blank_fragment">Hello blank fragment</string>
+</resources>

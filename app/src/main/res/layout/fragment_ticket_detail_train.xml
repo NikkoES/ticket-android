@@ -1,0 +1,227 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:background="@color/white"
+    android:orientation="vertical">
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="@color/white"
+        android:orientation="vertical">
+        <android.support.v7.widget.CardView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="8dp"
+            android:layout_marginRight="8dp"
+            android:layout_marginTop="8dp"
+            android:layout_marginBottom="2dp"
+            android:background="@color/white"
+            android:foreground="?attr/selectableItemBackground"
+            app:cardCornerRadius="8dp">
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="@color/superwhite"
+                android:orientation="vertical">
+                <RelativeLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal">
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:orientation="vertical"
+                        android:layout_toRightOf="@id/iv_ticketdetail_thumb"
+                        android:layout_toLeftOf="@id/ll_ticketdetail_status"
+                        android:padding="8dp">
+                        <TextView
+                            android:id="@+id/tv_ticket_detail_brand_name"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:textStyle="normal"
+                            android:text="Argo Parahyangan"
+                            android:textColor="@color/black"
+                            android:textSize="14sp"/>
+                        <TextView
+                            android:id="@+id/tv_ticket_detail_class"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:textStyle="normal"
+                            android:textColor="@color/black"
+                            android:text="Economy (C)"
+                            android:textSize="14sp"/>
+                    </LinearLayout>
+
+                    <LinearLayout
+                        android:id="@+id/ll_ticketdetail_status"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1"
+                        android:orientation="vertical"
+                        android:layout_centerVertical="true"
+                        android:layout_alignParentRight="true"
+                        android:padding="8dp">
+                        <TextView
+                            android:id="@+id/tv_ticket_detail_price"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:textStyle="normal"
+                            android:text="Rp. 1,034,000"
+                            android:textColor="@color/colorPrimary"
+                            android:textSize="14sp"/>
+
+                        <TextView
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:textStyle="normal"
+                            android:text="/ person"
+                            android:textColor="@color/black"
+                            android:textSize="14sp"/>
+                    </LinearLayout>
+                </RelativeLayout>
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:textStyle="bold"
+                    android:layout_marginLeft="16dp"
+                    android:text="Train Information"
+                    android:textColor="@color/black"
+                    android:textSize="14sp"/>
+
+                <LinearLayout
+                    xmlns:android="http://schemas.android.com/apk/res/android" android:layout_width="match_parent"
+                    xmlns:app="http://schemas.android.com/apk/res-auto"
+                    android:layout_height="wrap_content"
+                    android:orientation="vertical">
+                    <RelativeLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:orientation="horizontal">
+                        <com.mikepenz.iconics.view.IconicsImageView
+                            android:id="@+id/iv_ticketdetail_stops_facilities_takeoff"
+                            android:layout_marginLeft="16dp"
+                            android:layout_width="48dp"
+                            android:layout_height="48dp"
+                            android:layout_centerVertical="true"
+                            app:iiv_size="24dp"
+                            app:iiv_color="@color/colorPrimary"
+                            app:iiv_icon="gmd-flight-takeoff"/>
+
+                        <LinearLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:orientation="vertical"
+                            android:layout_toRightOf="@id/iv_ticketdetail_stops_facilities_takeoff"
+                            android:padding="8dp"
+                            android:layout_marginLeft="16dp">
+                            <TextView
+                                android:id="@+id/iv_ticketdetail_stops_facilities_takeoff_from"
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:textStyle="normal"
+                                android:textColor="@color/black"
+                                android:text="Jakarta (CGK)"
+                                android:textSize="14sp"/>
+                            <TextView
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:textStyle="normal"
+                                android:textColor="@color/black"
+                                android:visibility="gone"
+                                android:text="Soekarno Hatta Intl"
+                                android:textSize="14sp"/>
+                            <TextView
+                                android:id="@+id/iv_ticketdetail_stops_facilities_takeoff_date"
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:textStyle="normal"
+                                android:textColor="@color/gray"
+                                android:text="19 Oct, 13.30"
+                                android:textSize="14sp"/>
+                            <TextView
+                                android:id="@+id/iv_ticketdetail_stops_facilities_duration"
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:textStyle="normal"
+                                android:textColor="@color/black"
+                                android:text="Total Duration 1h 50m"
+                                android:textSize="14sp"/>
+                        </LinearLayout>
+                    </RelativeLayout>
+
+                    <RelativeLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:orientation="horizontal">
+                        <com.mikepenz.iconics.view.IconicsImageView
+                            android:id="@+id/iv_ticketdetail_stops_facilities_landing"
+                            android:layout_width="48dp"
+                            android:layout_height="48dp"
+                            android:layout_marginLeft="16dp"
+                            android:layout_centerVertical="true"
+                            app:iiv_size="24dp"
+                            app:iiv_color="@color/colorPrimary"
+                            app:iiv_icon="gmd-flight-land"/>
+
+                        <LinearLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:orientation="vertical"
+                            android:layout_toRightOf="@id/iv_ticketdetail_stops_facilities_landing"
+                            android:padding="8dp"
+                            android:layout_marginLeft="16dp"
+                            android:layout_marginBottom="8dp">
+                            <TextView
+                                android:id="@+id/iv_ticketdetail_stops_facilities_landing_to"
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:textStyle="normal"
+                                android:textColor="@color/black"
+                                android:text="Surabaya (SUB)"
+                                android:textSize="14sp"/>
+                            <TextView
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:textStyle="normal"
+                                android:textColor="@color/black"
+                                android:text="Juanda Intl"
+                                android:visibility="gone"
+                                android:textSize="14sp"/>
+                            <TextView
+                                android:id="@+id/iv_ticketdetail_stops_facilities_landing_date"
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:textStyle="normal"
+                                android:textColor="@color/gray"
+                                android:text="19 Oct, 15.20"
+                                android:textSize="14sp"/>
+                        </LinearLayout>
+                    </RelativeLayout>
+
+                    <View
+                        android:layout_width="match_parent"
+                        android:layout_height="1px"
+                        android:layout_marginLeft="16dp"
+                        android:layout_marginRight="16dp"
+                        android:background="@color/black"/>
+                </LinearLayout>
+
+            </LinearLayout>
+        </android.support.v7.widget.CardView>
+
+        <Button
+            android:id="@+id/btn_ticketdetail_book_train"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginRight="8dp"
+            android:layout_marginLeft="8dp"
+            android:layout_marginTop="8dp"
+            android:text="Book Train"
+            android:textColor="@color/white"
+            android:background="@color/green"/>
+    </LinearLayout>
+</ScrollView>

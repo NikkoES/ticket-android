@@ -1,0 +1,105 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.v7.widget.CardView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/cv_container"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_marginLeft="8dp"
+    android:layout_marginRight="8dp"
+    android:layout_marginTop="4dp"
+    android:layout_marginBottom="4dp"
+    android:background="@color/white"
+    android:foreground="?attr/selectableItemBackground"
+    app:cardCornerRadius="8dp">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="horizontal"
+        android:background="@color/white">
+        <ImageView
+            android:id="@+id/iv_flight_thumbnail"
+            android:layout_width="80dp"
+            android:layout_height="80dp"
+            android:layout_gravity="center_vertical"
+            android:src="@drawable/sj"/>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:orientation="vertical"
+            android:gravity="top"
+            android:layout_gravity="center_vertical"
+            android:paddingBottom="8dp"
+            android:paddingLeft="8dp"
+            android:paddingRight="8dp">
+            <TextView
+                android:id="@+id/tv_flight_brand"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:textStyle="normal"
+                android:text="Citilink"
+                android:textColor="@color/black"
+                android:textSize="24sp"/>
+
+            <TextView
+                android:id="@+id/tv_flight_seats"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:textStyle="normal"
+                android:text="2 Seats Left"
+                android:textColor="@color/colorPrimary"
+                android:textSize="14sp"/>
+
+            <TextView
+                android:id="@+id/tv_flight_direct_status"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:textStyle="normal"
+                android:layout_marginTop="4dp"
+                android:textColor="@color/black"
+                android:text="Direct (1h 50m)"
+                android:textSize="14sp"/>
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:orientation="vertical"
+            android:gravity="center_vertical"
+            android:layout_gravity="center_vertical"
+            android:padding="8dp">
+            <TextView
+                android:id="@+id/tv_flight_time"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:textStyle="normal"
+                android:text="13.30 - 16.20"
+                android:textColor="@color/black"
+                android:textSize="14sp"/>
+
+            <TextView
+                android:id="@+id/tv_flight_price"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:textStyle="normal"
+                android:layout_marginTop="4dp"
+                android:text="Rp. 1,034,000"
+                android:textColor="@color/colorPrimary"
+                android:textSize="14sp"/>
+
+            <Button
+                android:id="@+id/btn_ticketlisting_detail"
+                android:layout_width="wrap_content"
+                android:layout_height="36dp"
+                android:textStyle="normal"
+                android:layout_marginTop="4dp"
+                android:textColor="@color/white"
+                android:text="Detail"
+                android:background="@color/green"/>
+        </LinearLayout>
+
+    </LinearLayout>
+</android.support.v7.widget.CardView>
